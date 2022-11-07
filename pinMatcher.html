@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="text-center text-3xl">Welcome to Pin Matcher</h1>
+    <section class="grid grid-cols-2 gap-4 my-8 px-8">
+        <div class="flex flex-col bg-gray-700 p-4 justify-between items-center">
+            <input id="generate-field" class="border border-gray-400 rounded p-2 text-2xl text-white" type="text" disabled>
+            <button onclick="GeneratePin()" class="text-white bg-teal-800 text-2xl border-4 w-44 h-44 rounded-full border-teal-500 mb-12">Generate</button>
+        </div>
+        <div class="bg-gray-800 flex flex-col p-4 gap-4">
+            <input id="type-field" class="text-xl px-1 py-3 rounded text-white" type="text" disabled>
+            <div id="buttons" class="grid grid-cols-3 gap-4">
+                <button class="bg-teal-700 px-3 py-4 rounded text-white text-3xl">1</button>
+                <button class="bg-teal-700 px-3 py-4 rounded text-white text-3xl">2</button>
+                <button class="bg-teal-700 px-3 py-4 rounded text-white text-3xl">3</button>
+                <button class="bg-teal-700 px-3 py-4 rounded text-white text-3xl">4</button>
+                <button class="bg-teal-700 px-3 py-4 rounded text-white text-3xl">5</button>
+                <button class="bg-teal-700 px-3 py-4 rounded text-white text-3xl">6</button>
+                <button class="bg-teal-700 px-3 py-4 rounded text-white text-3xl">7</button>
+                <button class="bg-teal-700 px-3 py-4 rounded text-white text-3xl">8</button>
+                <button class="bg-teal-700 px-3 py-4 rounded text-white text-3xl">9</button>
+                <button class="bg-teal-700 px-3 py-4 rounded text-white text-3xl">0</button>
+                <button class="bg-teal-700 px-3 py-4 rounded text-white text-3xl col-span-2">Clear</button>
+                <button class="bg-teal-700 px-3 py-4 rounded text-white text-3xl col-span-3">Enter</button>
+            </div>
+        </div>
+    </section>
+    <section class="text-center">
+        <div id="success">
+            <h1 class="bg-green-700 text-white p-2 text-2xl">Matched!</h1>
+        </div>
+        <div id="error">
+            <h1 class="bg-red-700 text-white p-2 text-2xl">Didn't Matched!</h1>
+        </div>
+    </section>
+
+
+    <script src="pinMatcher.js"></script>
+</body>
+</html>
